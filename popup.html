@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rain Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <h1>RAIN MANAGER</h1>
+        <p>Automation dashboard</p>
+      </div>
+      <span class="status" id="status">OFFLINE</span>
+    </header>
+
+    <section class="panel">
+      <label>Website URL</label>
+      <input id="website" type="url"
+        placeholder="https://your-website.com">
+
+      <label>Number</label>
+      <input id="number" type="number"
+        placeholder="Enter number">
+
+      <label>Repeat interval</label>
+      <select id="interval">
+        <option value="60">Every 60 minutes</option>
+        <option value="120">Every 120 minutes</option>
+        <option value="30">Every 30 minutes</option>
+      </select>
+
+      <button id="start">START SCHEDULE</button>
+      <button id="stop" class="stop">STOP</button>
+
+      <p class="note">
+        Website automation is not connected yet.
+      </p>
+    </section>
+
+    <section class="timer panel">
+      <p>NEXT RAIN</p>
+      <div id="timer">--:--:--</div>
+      <small>Time until next cycle</small>
+    </section>
+
+    <section class="panel">
+      <h2>ACTIVITY LOGS</h2>
+      <div id="logs">
+        <p class="muted">No activity yet.</p>
+      </div>
+      <button id="clear" class="clear">CLEAR LOGS</button>
+    </section>
+
+    <footer>RAIN MANAGER • v1.0</footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
