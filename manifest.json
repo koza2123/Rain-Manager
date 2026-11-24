@@ -1,0 +1,18 @@
+
+{
+  "manifest_version": 3,
+  "name": "Rain Manager",
+  "version": "1.0.0",
+  "description": "Rain automation dashboard",
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Rain Manager"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
